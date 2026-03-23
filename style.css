@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+    background-image: url('train.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    overflow: hidden; 
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.95); /* Made slightly less transparent so text is easier to read */
+    padding: 30px 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    width: 90%; 
+    max-width: 380px; 
+    box-sizing: border-box;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Increased Kuromi Size */
+.main-img {
+    width: 220px; 
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.success-img {
+    width: 100%;
+    max-width: 250px; 
+    height: auto;
+    border-radius: 15px; 
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 25px;
+    line-height: 1.3;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #333;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* Styling for your custom apology message */
+.apology-text {
+    font-size: 1.2em;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 25px;
+    text-align: left; /* Aligns the paragraph to the left for easier reading */
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.yes-button, .no-button {
+    padding: 12px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    z-index: 10;
+    transition: transform 0.2s ease;
+}
+
+.yes-button {
+    background-color: #4CAF50; 
+    color: white;
+    width: 100px;
+}
+
+.yes-button:active {
+    transform: scale(0.95);
+}
+
+.no-button {
+    background-color: #f44336; 
+    color: white;
+    width: 100px;
+}
+
